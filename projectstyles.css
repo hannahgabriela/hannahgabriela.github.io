@@ -1,0 +1,95 @@
+:root {
+    --ff--primary: "Source Sans Pro", sans-serif;
+    --ff--secondary: "Source Code Pro", monospace;
+
+    --fw--reg: 300;
+    --fw--bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #B200ED;
+
+    --fs-h1: 2.6rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgb(0,0,.25),
+    0.125em 0.125em 0.25em rgb(0,0,.15);
+}
+
+@media (min-width: 800px){
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+/* General Styles */
+
+body{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff--primary);
+    font-size: var(--fs-body) ;
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+strong { font-weight: var(--fw--bold);}
+
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h2{
+    color: var(--clr-accent)
+    
+}
+h1 {font-size: var(--fs-h1)}
+h2 {font-size: var(--fs-h3)}
+
+.bio {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bioimg{
+    box-shadow: var(--bs);
+    display: block;
+    max-width: 100%;
+}
+
+
+@media (min-width: 600px){
+    .bio{
+        display: block;
+        grid-template-columns:1fr 200px;
+
+    }
+   
+    .bioimg{
+        position: relative;
+        z-index: 2;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
