@@ -110,8 +110,7 @@ h2 {font-size: var(--fs-h3)}
 
 
 html, body, head { 
-    background: url(a-215.jpg) no-repeat center center fixed; 
-    background-color: var(--clr-dark);
+    background: url(a-215.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
